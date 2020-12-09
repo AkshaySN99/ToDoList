@@ -1,0 +1,90 @@
+body {
+    color: #000;
+    overflow-x: hidden;
+    height: 100%;
+    background-image: linear-gradient(to right,  #008cff, #04db89);
+}
+.title {
+    padding: 10px;
+    text-transform: uppercase;
+}
+input,
+textarea {
+    background-color: #F3E5F5;
+    border-radius: 50px !important;
+    padding: 12px 15px 12px 15px !important;
+    margin-bottom: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    border: none !important;
+    border: 1px solid #F3E5F5 !important;
+    font-size: 16px !important;
+    color: #000 !important;
+    font-weight: 400
+}
+
+input:focus,
+textarea:focus {
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    border: 1px solid #04db89 !important;
+    outline-width: 0;
+    font-weight: 400
+}
+
+button:focus {
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    outline-width: 0
+}
+
+.card {
+    width: 50%;
+    padding: 40px 30px 10px 30px;
+    height: 100vh;
+}
+.heading {
+    margin-bottom: 60px !important;
+}
+
+.msg-info {
+    padding-left: 15px;
+    margin-bottom: 30px
+}
+
+.btn-color {
+    border-radius: 50px;
+    color: #fff;
+    background-image: linear-gradient(to right, #008cff, #04db89);
+    padding: 15px;
+    cursor: pointer;
+    border: none !important;
+    margin-top: 40px;
+    transition: all 0.5s;
+}
+
+.btn-color:hover {
+    color: #fff;
+    background-image: linear-gradient(to right, #04db89,#008cff);
+}
+
+a {
+    color: #000
+}
+
+a:hover {
+    color: #000
+}
+
+.sm-text {
+    font-size: 15px
+}
+
+@media screen and (max-width: 992px) {
+    .card {
+        margin: 35px 50px 35px 50px;
+        width: 80%;
+    }
+}

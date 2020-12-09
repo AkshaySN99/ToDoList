@@ -1,0 +1,138 @@
+body {
+    color: #000;
+    overflow-x: hidden;
+    height: 100%;
+    background-image: linear-gradient(to left,  #008cff, #04db89);
+}
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+}
+  
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.topnav a.active {
+    background-color: #008cff;
+    color: white;
+}
+
+.load-items {
+    border-radius: 50px;
+    color: #fff;
+    background-image: linear-gradient(to right, #008cff, #04db89);
+    padding: 15px;
+    cursor: pointer;
+    border: none !important;
+    margin-top: 40px;
+    transition: all 0.5s;
+}
+
+.load-items:hover {
+    color: #fff;
+    background-image: linear-gradient(to right, #04db89,#008cff);
+}
+  
+.todo-list li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    background: #dbdbdb81;
+    border-radius: 5px;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.left-cont input {
+    display: none;
+    cursor: pointer;
+}
+.left-cont label {
+    position: relative;
+    cursor: pointer;
+}
+
+.left-cont label:before {
+    content: '';
+    padding: 11px;
+    display: inline-block;
+    position: relative;
+    margin-right: 8px;
+    vertical-align: middle;
+    background: #8a8a8a;
+    border-radius: 5px;
+}
+.left-cont input:checked + label:before {
+    background: #008cff;
+}
+.left-cont input:checked + label:after {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    top: 4px;
+    left: 8px;
+    width: 5px;
+    height: 12px;
+    border: solid #000000;
+    border-width: 0px 2px 2px 0px;
+    transform: rotate(45deg);
+}
+.remove {
+    cursor: pointer;
+    line-height: 1;
+    transform: translateX(80px);
+    transition: 0.5s;
+}
+.active {
+    transform: translateX(0px);
+    transition: 0.5s;
+}
+.left-cont span {
+    border-radius: 50px !important;
+    padding: 12px 15px 12px 15px !important;
+    margin-bottom: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    border: none !important;
+    font-size: 16px !important;
+    color: #000 !important;
+    font-weight: 400
+}
+
+.card {
+    width: 60%;
+    padding: 40px 30px 10px 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+i.material-icons {
+    color: rgba(54, 54, 54, 0.342);
+    font-size: 3.5em;
+    margin-left: 15px;
+    transition: all 0.25s ease-in-out;
+    border-radius: 50%;
+}
+i.material-icons:hover {
+    color: rgb(252, 21, 21);
+}
+@media screen and (max-width: 992px) {
+    .card {
+        margin: 35px 50px 35px 50px;
+        width: 80%;
+    }
+}
